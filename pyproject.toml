@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ucymideqou-safeval_jd381"
+version = "0.1.0"
+description = "从输入中抽取数值，计算模型安全评测负责人·量化位宽与精度回退相关的比值与占比，分母为零时明确报错"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "ucymideqou" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://ucymideqou.github.io"
+Repository = "https://github.com/ucymideqou/safeval_jd381"
+Issues = "https://github.com/ucymideqou/safeval_jd381/issues"
+
+[project.scripts]
+safeval_jd381 = "safeval_jd381:main"
+
+[tool.setuptools]
+py-modules = ["safeval_jd381"]
